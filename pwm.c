@@ -13,12 +13,12 @@ int main()
     
 	while(1)
 {
-	softPwmWrite(9,255);
+	softPwmWrite(9,0);
 	softPwmWrite(7,0);
 	softPwmWrite(0,0);
 
     delay(1000);
-    softPwmWrite(9,0);
+    softPwmWrite(9,255);
 	softPwmWrite(7,0);
 	softPwmWrite(0,0);
 	delay(1000);

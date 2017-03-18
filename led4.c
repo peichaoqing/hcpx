@@ -15,31 +15,33 @@ int main()
     digitalWrite(0,HIGH);
     
     digitalWrite(9,LOW);
-    int total = 10;
-    int time = total;
+    int total = 20;
+    int time = 0;
     int step = 1;
     int i;
   
 	while(1)
 {
-	time -=step;
+	time +=step;
 	for(i=0;i<10;i++)
 {
 		
 	
-digitalWrite(8,HIGH);
-delay(time);
 digitalWrite(8,LOW);
 delay(total-time);
-if(time<=0)
-time = total;
+digitalWrite(8,HIGH);
+delay(time);
+if(time>=20)
+time = 0;
+
+}
  
 } 
     return 0;
 }
-}
     
     
+
 
 
 
